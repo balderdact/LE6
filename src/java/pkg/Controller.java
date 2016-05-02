@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Controller extends HttpServlet {
     
     private User account = new User();
+    private int failedAttempts = 0;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -22,7 +23,12 @@ public class Controller extends HttpServlet {
         if (correctUsername && correctPass) {
             request.getRequestDispatcher("convert.jsp").forward(request, response);
         } else {
-            request.getRequestDispatcher("error.jsp").forward(request, response);
+            if (failedAttempts < 3) {
+                failedAttempts++;
+                request.getRequestDispatcher("error1.jsp").forward(request, response);
+            } else {
+                request.getRequestDispatcher("error2.jsp").forward(request, response);
+            }
         }       
     }
 
