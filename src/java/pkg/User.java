@@ -1,14 +1,9 @@
 package pkg;
 
-public class User {
+public class User implements java.io.Serializable {
     
-    private String username;
-    private String password;
-    
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+    private String username = "cunagervacio";
+    private String password = "2ith";
     
     public String getUsername() {
         return username;

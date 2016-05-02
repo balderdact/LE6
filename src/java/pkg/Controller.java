@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Controller extends HttpServlet {
     
-    private User account = new User("cunagervacio", "2ith");
+    private User account = new User();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
