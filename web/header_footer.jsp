@@ -19,7 +19,7 @@
         String dollars = df.format(pesos * 0.021);
         session.setAttribute("dollars", dollars);
         String name = getServletConfig().getInitParameter("Name");
-        session.setAttribute("name", name);
+        getServletContext().setAttribute("name", name);
         String total = (String) session.getAttribute("total");
         if (total == null) {
             total = dollars;
@@ -35,7 +35,7 @@
     <footer>
         <br>
         <b>Username: </b><jsp:getProperty name="user" property="username"/><br/>
-        <b>Name: </b>${name}
+        <b>Name: </b><%=name%>
     </footer>
     <br><br>
     <form action="convert.jsp" method="POST">
