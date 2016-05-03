@@ -5,13 +5,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Error</title>
     </head>
-    <body>
-        <h2>Invalid Login</h2>
+    <header>
+        <center><h1>Dollar Exchanger</h1></center>
+    </header>
+    <center><body>
+        <h3>Invalid Login</h3>
         <br>
-        Invalid username and/or password.
+        Incorrect username and/or password.
         <br><br>
         <form action="login.jsp" method="POST">
-        <input type="submit" value="Try Again?" />
+            <input type="submit" value="Try Again? >" />
         </form>
-    </body>
+    </body></center>
+    <footer>
+        <br>
+        <b>Comments? Suggestions? Email us.</b>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+    </footer>
 </html>

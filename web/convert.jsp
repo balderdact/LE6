@@ -5,15 +5,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Input</title>
     </head>
+    <header>
+        <center><h1>Dollar Exchanger</h1></center>
+    </header>
     <body>
-        <h1>Peso to US Dollar Converter</h1>
-        <br>
-        <form action="header_footer.jsp" method="POST">
-        <b>Amount:</b> &nbsp; &nbsp; &nbsp; <input type="text" name="Amount" value="" />
-        <br><br>
-        <small>1 Philippine Peso equals 0.021 US Dollars</small>
-        <br><br>
-        <input type="submit" value="Convert" name="Convert" />
+        <form action="results.jsp" method="POST">
+            <center><b>How much would you like to exchange?</b></center>
+            <br>
+            <center><input type="text" name="Amount" value="" /></center>
+            <br>
+            <center><small>1.00 Php = $0.021 USD</small></center>
+            <br>
+            <center><input type="submit" value="Exchange >" name="Convert" /></center>
         </form>
     </body>
+    <footer>
+        <br>
+        <b>Comments? Suggestions? Email us.</b>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+    </footer>
 </html>

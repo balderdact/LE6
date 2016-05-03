@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <servlet>
-        <servlet-name>header_footer</servlet-name>
-        <jsp-file>/header_footer.jsp</jsp-file>
+        <servlet-name>results</servlet-name>
+        <jsp-file>/results.jsp</jsp-file>
         <init-param>
             <param-name>Name</param-name>
             <param-value>Francesca Cuna</param-value>
@@ -13,8 +13,8 @@
         <servlet-class>pkg.Controller</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>header_footer</servlet-name>
-        <url-pattern>/header_footer.jsp</url-pattern>
+        <servlet-name>results</servlet-name>
+        <url-pattern>/results.jsp</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>

@@ -5,9 +5,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Error</title>
     </head>
-    <body>
-        <h2>Invalid Login</h2>
+    <header>
+        <center><h1>Dollar Exchanger</h1></center>
+    </header>
+    <center><body>
+        <h3>Invalid Login</h3>
         <br>
         Account locked due to too many failed attempts to login.
-    </body>
+    </body></center>
+    <footer>
+        <br>
+        <b>Comments? Suggestions? Email us.</b>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+        <br>
+        <small>2014068453@ust-ics.mygbiz.com</small>
+    </footer>
 </html>
