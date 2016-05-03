@@ -42,7 +42,7 @@
     <form action="convert.jsp" method="POST">
         <center><input type="submit" value="Another transation? >" name="Try Again" /></center>
     </form>    
-    <form action="login.jsp" method="POST">
+    <form action="Controller" method="POST">
         <center><input type="submit" value="Log out? >" name="logout" /></center>
     </form>
     <footer>
