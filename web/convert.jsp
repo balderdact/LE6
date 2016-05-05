@@ -6,25 +6,31 @@
         <title>Input</title>
     </head>
     <header>
-        <center><h1>Dollar Exchanger</h1></center>
+        <center><h1 style="color:green; font-family:verdana;">Dollar Exchanger</h1></center>
     </header>
     <body>
+        <font style="color:green; font-family:verdana;">
         <form action="results.jsp" method="POST">
-            <center><b>How much would you like to exchange?</b></center>
+            <center>How much would you like to exchange?</center>
             <br>
             <center><input type="text" name="Amount" value="" /></center>
             <br>
-            <center><small>1.00 Php = $0.021 USD</small></center>
+            <center><small><i>1.00 Php = $0.021 USD</i></small></center>
             <br>
-            <center><input type="submit" value="Exchange >" name="Convert" /></center>
+            <center><input type="submit" value="Exchange" name="Convert" /></center>
         </form>
+        </font>
     </body>
+    <br><br>
     <footer>
+        <center>
+        <font style="color:green; font-family:verdana;">
         <br>
         <b>Comments? Suggestions? Email us.</b>
         <br>
         <small>2014068453@ust-ics.mygbiz.com</small>
         <br>
-        <small>2014068453@ust-ics.mygbiz.com</small>
+        <small>2014069870@ust-ics.mygbiz.com</small>
+        </font></center>
     </footer>
 </html>

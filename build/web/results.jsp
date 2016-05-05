@@ -8,9 +8,10 @@
         <title>Converter</title>
     </head>
     <header>
-        <center><h1>Dollar Exchanger</h1></center>
+        <center><h1 style="color:green; font-family:verdana;">Dollar Exchanger</h1></center>
     </header>
     <body>
+        <font style="color:green; font-family:verdana;">
     <%@ page import="java.text.DecimalFormat"%>    
     <%
         DecimalFormat df = new DecimalFormat("#.##");
@@ -33,28 +34,28 @@
     <b>=</b>
     <br>
     <b>${dollars} USD</b>
-    <br>
-    <p>${dollars} USD has been added to your account.</p> 
-    <br>
-    <p>Total Dollars Converted: </p> ${total} </center>
+    <br><br>
+    <i>${dollars} USD has been added to your account.</i>
+    <br><br>
+    <i>Total dollars converted:</i> <br> ${total} </center>
+    </font>
     </body>
     <br><br>
     <form action="convert.jsp" method="POST">
-        <center><input type="submit" value="Another transation? >" name="Try Again" /></center>
+        <center><input type="submit" value="Another Transation" name="Try Again" /></center>
     </form>    
     <form action="Controller" method="POST">
-        <center><input type="submit" value="Log out? >" name="logout" /></center>
+        <center><input type="submit" value="Log Out" name="logout" /></center>
     </form>
+    <br><br>
     <footer>
-        <br>
-        <b>Username: </b><jsp:getProperty name="user" property="username"/><br/>
-        <b>Name: </b><%=name%>
-        <br><br>
+        <center>
+        <font style="color:green; font-family:verdana;">
         <b>Comments? Suggestions? Email us.</b>
         <br>
         <small>2014068453@ust-ics.mygbiz.com</small>
         <br>
-        <small>2014068453@ust-ics.mygbiz.com</small>
+        <small>2014069870@ust-ics.mygbiz.com</small>
+        </font></center>
     </footer>
 </html>
-
