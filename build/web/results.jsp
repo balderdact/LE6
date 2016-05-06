@@ -8,6 +8,9 @@
         <title>Converter</title>
     </head>
     <header>
+        <font style="color:green; font-family:verdana;">
+        Account: <b><jsp:getProperty name="user" property="username"/><br/></b>
+        </font>
         <center><h1 style="color:green; font-family:verdana;">Dollar Exchanger</h1></center>
     </header>
     <body>

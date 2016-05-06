@@ -1,4 +1,5 @@
-
+<jsp:useBean id="user" class="pkg.User" scope="page"/>
+<jsp:setProperty name="user" property="*"/>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,6 +8,9 @@
         <title>Members</title>
     </head>
     <header>
+        <font style="color:green; font-family:verdana;">
+        Account: <b><jsp:getProperty name="user" property="username"/><br/></b>
+        </font>
         <center><h1 style="color:green; font-family:verdana;">Dollar Exchanger</h1></center>
     </header>
     <center><body>
