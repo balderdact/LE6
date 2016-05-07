@@ -74,6 +74,9 @@
         <form action="convert.jsp" method="POST">
             <center><input type="submit" value="Another Transation" name="Try Again" /></center>
         </form>
+        <form action="Controller" method="POST">
+            <center><input type="submit" value="Log Out" name="logout" /></center>
+        </form>
         <br><br><br>
     </body></center>
     <footer>

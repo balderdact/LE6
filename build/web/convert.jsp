@@ -24,6 +24,9 @@
             <br>
             <center><input type="submit" value="Exchange" name="Convert" /></center>
         </form>
+        <form action="Controller" method="POST">
+            <center><input type="submit" value="Log Out" name="logout" /></center>
+        </form>
         </font>
     </body>
     <br><br>
