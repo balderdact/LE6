@@ -26,14 +26,15 @@
                 if (m.isEmpty()) {
                     out.println("<font style=\"color:green; font-family:verdana;\"><br>You have not added any members to select from yet.</font>");
                 } else {
+                    out.println("<form action=\"results2.jsp\" method=\"POST\">");
                     out.println("<font style=\"color:green; font-family:verdana;\">");
                     out.println("<br> Select a member to withdraw with: ");
-                    out.println("<select>");
+                    out.println("<select name = \"Select Member\" >");
                     for (Member mem : m) {
                         out.println("<option value=\""+mem.getName()+"\">"+mem.getName()+"</option>");
                     }
                     out.println("</select>");
-                    out.println("<br><br><form action=\"results2.jsp\" method=\"POST\">");
+                    out.println("<br><br>");
                     out.println("<p>Input amount to withdraw: &nbsp;</p>");
                     out.println("<input type=\"text\" name=\"Withdraw Value\" value=\"\" />");
                     out.println("<input type=\"submit\" value=\"Withdraw\" name=\"Withdraw\" /></form></font>");
@@ -43,7 +44,7 @@
         %>
         <br><br>
         <form action="convert.jsp" method="POST">
-            <center><input type="submit" value="Another Transation" name="Try Again" /></center>
+            <center><input type="submit" value="Convert" name="Try Again" /></center>
         </form>
         <form action="members.jsp" method="POST">
             <center><input type="submit" value="Members" name="Members" /></center>

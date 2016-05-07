@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Converter</title>
+        <title>Withdrawal</title>
     </head>
     <header>
         <font style="color:green; font-family:verdana;">
@@ -13,36 +13,25 @@
         </font>
         <center><h1 style="color:green; font-family:verdana;">Dollar Exchanger</h1></center>
     </header>
-    <body>
+    <center><body>
         <font style="color:green; font-family:verdana;">
-    <%@ page import="java.text.DecimalFormat"%>    
-    <%
-        DecimalFormat df = new DecimalFormat("#.##");
-        double pesos = Double.parseDouble(request.getParameter("Amount"));
-        session.setAttribute("pesos", df.format(pesos));
-        String dollars = df.format(pesos * 0.021);
-        session.setAttribute("dollars", dollars);
-        String name = getServletConfig().getInitParameter("Name");
-        getServletContext().setAttribute("name", name);
-        String total = (String) session.getAttribute("total");
-        if (total == null) {
-            total = dollars;
-        } else {
-            total = df.format(Double.parseDouble(total) + Double.parseDouble(dollars));
-        }
-        session.setAttribute("total", total);
-    %>
-    <center><b>${pesos} x 0.021</b>
-    <br>
-    <b>=</b>
-    <br>
-    <b>${dollars} USD</b>
-    <br><br>
-    <i>${dollars} USD has been added to your account.</i>
-    <br><br>
-    <i>Total dollars converted:</i> <br> ${total} </center>
-    </font>
-    </body>
+            <%@ page import="java.text.DecimalFormat"%> 
+            <%
+                DecimalFormat df = new DecimalFormat("#.##");
+                double total = Double.parseDouble((String) session.getAttribute("total"));
+                double withdraw = Double.parseDouble(request.getParameter("Withdraw Value"));
+                String member = request.getParameter("Select Member");
+                if (withdraw > total) {
+                    out.println("<h3>Invalid Withdrawal</h3><br>");
+                    out.println("You tried to withdraw "+df.format(withdraw)+ " USD with a balance of "+df.format(total)+" USD.");
+                } else {
+                    out.println(member+" has successfully withdrawn "+df.format(withdraw)+" USD from your account.");
+                    out.println("<br><br>Your current balance is now: "+df.format(total - withdraw)+" USD");
+                    session.setAttribute("total", df.format(total - withdraw));
+                }
+            %>
+        </font>
+    </body></center>
     <br><br>
     <form action="convert.jsp" method="POST">
         <center><input type="submit" value="Convert" name="Try Again" /></center>

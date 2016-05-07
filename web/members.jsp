@@ -72,7 +72,7 @@
             <center><input type="submit" value="Withdraw" name="Withdraw" /></center>
         </form>
         <form action="convert.jsp" method="POST">
-            <center><input type="submit" value="Another Transation" name="Try Again" /></center>
+            <center><input type="submit" value="Convert" name="Try Again" /></center>
         </form>
         <form action="Controller" method="POST">
             <center><input type="submit" value="Log Out" name="logout" /></center>
